@@ -1,0 +1,48 @@
+@import "@/styles/abstracts/variables";
+@import "@/styles/abstracts/mixins";
+@import "@/styles/abstracts/functions";
+
+.table {
+  @include border-radius(0.5rem);
+  overflow: hidden;
+  border: 1px solid $col-light-grey;
+  text-align: center;
+
+  th {
+    padding: toRem(12px) 1.5rem;
+    background-color: rgba($color: $col-primary, $alpha: 0.1);
+    color: rgb(107, 114, 128);
+    font-weight: 500;
+  }
+
+  td {
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+  }
+
+  tr {
+    background-color: rgba($color: $col-primary, $alpha: 0.1);
+
+    &:nth-child(2n + 1) {
+      background-color: $col-white;
+    }
+
+    &:hover {
+      background-color: rgba($color: $col-primary, $alpha: 0.3);
+    }
+  }
+
+  table {
+    min-width: 100%;
+  }
+
+  &__empty {
+    background-color: $col-white;
+    height: 20rem;
+    color: $col-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

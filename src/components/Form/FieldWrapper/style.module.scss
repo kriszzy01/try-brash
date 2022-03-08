@@ -1,0 +1,19 @@
+@import "@/styles/abstracts/variables";
+@import "@/styles/abstracts/mixins";
+@import "@/styles/abstracts/functions";
+
+.fieldwrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  &_label {
+    color: $col-dark;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  &_error {
+    color: $col-danger;
+  }
+}

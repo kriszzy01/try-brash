@@ -1,0 +1,16 @@
+@import "@/styles/abstracts/variables";
+@import "@/styles/abstracts/mixins";
+@import "@/styles/abstracts/functions";
+
+.autocomplete {
+  position: relative;
+  width: 100%;
+  margin-top: 0.6rem;
+  border: 1px groove $col-dark;
+  height: 4rem;
+  @include border-radius(6px);
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  color: $col-dark;
+}
