@@ -59,7 +59,7 @@ export const AutocompleteSearch = ({
         value={searchterm}
         placeholder="eg. Access"
         onChange={handleChange}
-        onBlur={() => setTimeout(handleClose, 100)}
+        onBlur={() => setTimeout(handleClose, 200)}
         className={style["autocomplete"]}
         id={id}
       />

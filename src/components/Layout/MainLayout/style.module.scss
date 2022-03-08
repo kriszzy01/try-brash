@@ -7,7 +7,9 @@
 
   &__header {
     position: fixed;
-    inset: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
     padding-left: 1rem;
     padding-right: 1rem;
     height: toRem(80px);
