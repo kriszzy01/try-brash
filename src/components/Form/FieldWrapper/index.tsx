@@ -1,4 +1,3 @@
-import { FormikErrors } from "formik";
 import clsx from "clsx";
 
 import style from "./style.module.scss";
