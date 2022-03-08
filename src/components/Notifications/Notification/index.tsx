@@ -1,4 +1,5 @@
 import SVG from "react-inlinesvg";
+import * as React from "react";
 
 import style from "./style.module.scss";
 
@@ -27,6 +28,14 @@ export const Notification = ({
   message,
   handleClose,
 }: NotificationProps) => {
+  React.useEffect(() => {
+    let timeout = setTimeout(handleClose, 2000); //Close the notification after 2 seconds
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [handleClose]);
+
   return (
     <div className={style["notification"]} role="alert">
       <div className={style[`notification__icon-${variant}`]}>
