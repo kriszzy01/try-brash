@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import { motion } from "framer-motion";
 
 import style from "./style.module.scss";
 

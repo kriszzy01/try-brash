@@ -21,7 +21,6 @@ export const Options = ({ handleClick, results }: OptionsProps) => {
       <ul role="listbox">
         {results.map((option, index) => (
           <li
-            role="option"
             tabIndex={-1}
             className={style["option__list"]}
             key={option.id}

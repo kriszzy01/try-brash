@@ -7,7 +7,6 @@ import style from "./style.module.scss";
 
 import { Button } from "@/components/Elements";
 import { InputField } from "@/components/Form/InputField";
-import { SelectField } from "@/components/Form/SelectField";
 
 import { useVerifyAccount } from "../../api/verifyAccount";
 

@@ -2,7 +2,6 @@ import { axios } from "@/lib/axios";
 import { useDispatch } from "react-redux";
 import { useMutation } from "react-query";
 import { addNotification } from "@/slices/notifications";
-import { addTransfer } from "@/slices/payments";
 
 interface CreateRecipientData {
   type: string;
