@@ -1,0 +1,51 @@
+@import "@/styles/abstracts/variables";
+@import "@/styles/abstracts/mixins";
+@import "@/styles/abstracts/functions";
+
+.payment {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 3rem 2rem;
+
+  &__dialog {
+    position: absolute !important;
+  }
+
+  &-back-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid $col-dark;
+    @include border-radius(6px);
+  }
+
+  &__form {
+    height: 100%;
+
+    &-title {
+      margin-bottom: 1rem;
+      font-weight: 500;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    [type="submit"] {
+      margin-top: 3rem;
+      height: 4rem;
+
+      button {
+        height: inherit;
+      }
+    }
+
+    &-account {
+      margin-top: 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+      padding: 1rem 1.5rem;
+      background-color: $col-dark;
+      font-weight: 500;
+      @include border-radius(6px);
+      color: $col-white;
+    }
+  }
+}

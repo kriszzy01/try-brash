@@ -1,0 +1,29 @@
+@import "@/styles/abstracts/variables";
+@import "@/styles/abstracts/mixins";
+@import "@/styles/abstracts/functions";
+
+.validation {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 3rem 2rem;
+
+  &__form {
+    height: 100%;
+
+    &-title {
+      margin-bottom: 2rem;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    &-button {
+      margin-top: 5rem;
+      height: 4rem;
+
+      button {
+        height: inherit;
+      }
+    }
+  }
+}

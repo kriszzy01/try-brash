@@ -1,0 +1,89 @@
+@import "@/styles/abstracts/variables";
+@import "@/styles/abstracts/mixins";
+
+.payment {
+  display: flex;
+  height: 100%;
+  background-color: $col-dark;
+
+  @media screen and (max-width: 62em) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  &__text {
+    display: none;
+
+    @media screen and (min-width: 62em) {
+      flex-basis: 60%;
+      background-color: $col-black;
+      color: $col-light;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 8rem;
+    }
+
+    &-container {
+      h1 {
+        font-size: 6rem;
+        line-height: 1.1;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 1.7rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__forms {
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+
+    background-color: $col-dark;
+
+    @media screen and (min-width: 62em) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem;
+      flex-basis: 40%;
+    }
+
+    &-inner {
+      height: 85%;
+      @include border-radius(6px);
+      background-color: $col-light-grey;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-step {
+      height: 5px;
+      width: 100%;
+      background-color: $col-grey;
+      color: $col-white;
+      display: none;
+    }
+
+    &-container {
+      height: 100%;
+      flex-grow: 1;
+    }
+  }
+}

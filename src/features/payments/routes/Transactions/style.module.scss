@@ -1,0 +1,30 @@
+@import "@/styles/abstracts/variables";
+@import "@/styles/abstracts/mixins";
+@import "@/styles/abstracts/functions";
+
+.payments {
+  padding-top: 7rem;
+  overflow-y: scroll;
+  text-align: center;
+  height: 100vh;
+  padding-bottom: 3rem;
+  overflow-x: scroll;
+
+  @media screen and (min-width: 62em) {
+    padding-top: 10rem;
+  }
+
+  &__table {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-width: toRem(756px);
+
+    @media screen and (min-width: 62em) {
+      padding: 5px;
+      height: fit-content;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
