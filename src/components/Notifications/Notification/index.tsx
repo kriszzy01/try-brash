@@ -29,7 +29,7 @@ export const Notification = ({
   handleClose,
 }: NotificationProps) => {
   React.useEffect(() => {
-    let timeout = setTimeout(handleClose, 2000); //Close the notification after 2 seconds
+    let timeout = setTimeout(handleClose, 4000); //Close the notification after 2 seconds
 
     return () => {
       clearTimeout(timeout);
